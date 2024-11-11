@@ -26,6 +26,7 @@ function pageLoad(){
 	document.getElementById("username").innerHTML = username;
 	console.log(getCookie('img'));
 	showImg('img/'+getCookie('img'));
+	readPost();
 	setInterval(readPost, 1000);
 }
 

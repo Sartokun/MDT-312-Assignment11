@@ -27,7 +27,6 @@ function pageLoad(){
 	console.log(getCookie('img'));
 	showImg('img/'+getCookie('img'));
 	readPost();
-	setInterval(readPost, 1000);
 }
 
 function getData(){

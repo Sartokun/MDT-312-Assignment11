@@ -30,13 +30,13 @@ MDT 312: WEB PROGRAMMING
 ### ฟังก์ชัน `checkCookie()`
 ```javascript
 function checkCookie() {
-    var username = "";  // ประกาศตัวแปร username แต่ไม่ได้ใช้งานในที่นี้
+    var username = "";  // ประกาศตัวแปร username (ให้เขียนกันเองนะอันนี้ง่ายๆ ใบ้: getCookie("..."))
     if (getCookie("username") == false) {  // ตรวจสอบว่า cookie ที่ชื่อว่า "username" มีค่าหรือไม่
         window.location = "index.html";  // ถ้าไม่มี cookie "username" จะเปลี่ยนเส้นทางไปยังหน้าหลัก
     }
 }
 ```
-- `var username = "";`: ตัวแปร `username` ถูกประกาศ แต่ไม่ได้ถูกใช้ที่อื่น
+- `var username = "";`: ตัวแปร `username` (ให้เขียนกันเองนะอันนี้ง่ายๆ ใบ้: getCookie("..."))
 - `if (getCookie("username") == false) { ... }`: ใช้ฟังก์ชัน `getCookie("username")` เพื่อตรวจสอบว่าใน `cookie` มีคุกกี้ที่ชื่อว่า `username` หรือไม่ ถ้าไม่มี (ค่าคืนเป็น `false`), ระบบจะนำผู้ใช้ไปยังหน้า `index.html` เพื่อให้กรอกข้อมูลใหม่
 #
 ### ฟังก์ชัน `getCookie(name)`
